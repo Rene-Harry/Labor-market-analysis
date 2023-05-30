@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./home.css">
+  <title>Homepage</title>
+</head>
+
+<body>
+  
+  <nav>
+    <div class="profile">
+      <img src="./images/profile.png" alt="Profile Image">
+    </div>
+    <div class="card" id="profile-card">
+      <ul>
+        <li id="logOut">
+          <img src="./images/Logout.png" alt="">
+          <span>Logout</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>KENYAN JOB MARKET ANALYSIS AND VISUALIZATION</h1>
+  <select id="courses_trend">
+    <option value="default">Select Degree Program Category</option>
+    <option value="law">Law</option>
+    <option value="business-and-hospitality">Business and Hospitality</option>
+    <option value="geoscience">Geoscience</option>
+    <option value="engineering">Engineering, Technology and Related</option>
+    <option value="architecture-building-construction">Architecture, Design, Planning</option>
+    <option value="computing-and-it">Computing and IT/ICT</option>
+    <option value="sciences">Sciences and related</option>
+    <option value="actuarial-science-accountancy-mathematics-economics-statistics">Actuarial Science, Accountancy,
+      Mathematics, Economics, Statistics</option>
+    <option value="medicine-health-veterinary-medicine">Medicine, Health, Veterinary Medicine</option>
+    <option value="education">Education</option>
+  </select>
+
+
+  <div class="canva" id="law_div">
+    <div class="canvas-title">
+      <h2>Law</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="law"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The bars in the visualization suggest that there 
+        has been growth in the job listing sector. 
+        The bars steadily increase over the years, with 
+        more recent years showing noticeably taller bars,
+        indicating significant expansion in the industry.
+      </p>
+    </div>
+  </div>
+
+  <div class="canva" id="business-and-hospitality">
+    <div class="canvas-title">
+      <h2>Business and Hospitality</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="businessHospitality"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The lines in the visualization suggest that there
+         has been growth in the job sector. Recent years curves
+         are higher than previous years and also been 
+         steady across the months with a slight dip mid year.
+      </p>
+    </div>
+  </div>
+
+  <div class="canva" id="geoscience_div">
+    <div class="canvas-title">
+      <h2>Geoscience</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="geoscience"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The bars in the visualization suggest that there 
+        has been growth in the number of jobs advertised.
+        An increase in number of jobs listed in 2023 as 
+        compared to 2022 
+      </p>
+    </div>
+  </div>
+
+  <div class="canva" id="engineering_div">
+    <div class="canvas-title">
+      <h2>Engineering</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="engineering"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The bars in the visualization suggest that there 
+        has been growth in the number of jobs advertised.
+        An increase in number of jobs listed in 2023 as 
+        compared to 2022 however the growth is negligible 
+        but worth noting.
+      </p>
+    </div>
+  </div>
+
+  <div class="canva" id="architecture-building-construction">
+    <div class="canvas-title">
+      <h2>Architecture, Building and Construction</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="architecture"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The bars in the visualization suggest that there 
+        has been growth in the number of jobs advertised
+        for architecture related job titles.
+        An increase in number of jobs listed in 2023 as 
+        compared to 2022
+      </p>
+    </div>
+  </div>
+
+  <div class="canva" id="computingdiv">
+    <div class="canvas-title">
+      <h2>Computing and IT</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="computing-and-it"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The lines in the visualization suggest that there
+        has been growth in the computing job sector. Recent years curves
+        are higher than previous years and also been 
+        steady across the months with a slight dip mid year.
+      </p>
+    </div>
+  </div>
+
+  <div class="canva" id="sciences">
+    <div class="canvas-title">
+      <h2>Sciences and related</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="science"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The bars in the visualization suggest that there 
+        has been growth in the number of jobs advertised.
+        An increase in number of jobs listed in 2023 as 
+        compared to 2022 
+      </p>
+    </div>
+  </div>
+
+  <div class="canva" id="actuarial-science-accountancy-mathematics-economics-statistics">
+    <div class="canvas-title">
+      <h2>Actuarial Science, Accountancy,
+        Mathematics, Economics, Statistics</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="acturial"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>2021 and earlier months of 2022 there was an 
+        irregular job listing per month.It then steadies up 
+        in the second part of the year and experiences a
+         steady increase. Number of job listing is also high 
+         in 2023 indicated by high line for january and 
+         february.
+      </p>
+    </div>
+  </div>
+
+  <div class="canva" id="medicine-health-veterinary-medicine">
+    <div class="canvas-title">
+      <h2>Medicine, Health, Veterinary Medicine</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="medicine"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The bars in the visualization suggest that there 
+        has been growth in the medicine sector. 
+        The bars steadily increase over the years, with 
+        more recent years showing noticeably taller bars,
+        indicating expansion in the industry.
+      </p>
+    </div>
+  </div>
+
+  <div class="canva" id="educations">
+    <div class="canvas-title">
+      <h2>Education</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="education"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The bars in the visualization suggest that there 
+        has been growth in the Education job sector. 
+        The bars steadily increase over the years, with 
+        more recent years showing noticeably taller bars,
+        indicating expansion in the industry.
+      </p>
+    </div>
+  </div>
+
+  <div class="canva">
+    <div class="canvas-title">
+      <h2>Leading Employers</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="leadingEmployers"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The leading Employers by number of job listings posted were recruitement
+        agencys that companies do Hire to find them personell
+      </p>
+    </div>
+  </div>
+
+  <div class="canva">
+    <div class="canvas-title">
+      <h2>Most Common job Title</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="commonJobTitles"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>The most common job titles after analysis of the data were 
+        found to be Managerial position that mostly lie in 
+        business and hospitality sector.
+      </p>
+    </div>
+  </div>
+  <div class="canva">
+    <div class="canvas-title">
+      <h2>Jobs Advertised per month</h2>
+    </div>
+    <div class="canvas-card">
+      <canvas id="jobsPerMonth"></canvas>
+    </div>
+    <div class="canvas-explanation">
+      <p>There is a steady curve of job listings over the 
+        months.The most listing occur at the start and end
+        of the year with  relatively fewer listings around
+        mid year. 
+      </p>
+    </div>
+  </div>
+
+<footer>
+  <div class="footer">
+  <div class="about" id="about">
+    <h3>About</h2>
+    <p>Welcome to our website where we provide you with up-to-date insights into 
+      the labor market. Our platform is designed to help you stay informed about 
+      the latest trends and changes in the job market.
+      We analyze job listings from various sources to identify job categories 
+      that are growing and those that are declining. Our team of experts uses 
+      advanced data analysis tools to provide you with accurate and reliable information 
+      about the labor market.</p>
+    <p>Our platform offers a visualization of this data in the form of easy-to-understand charts. 
+      These charts provide you with a clear picture of the job categories that are in demand and 
+      those that are losing popularity. We make it easy for you to see how job trends have changed 
+      over time.In addition to job trends, we also provide insights into leading employers and most common 
+      job titles. This information can be very useful when you are searching for a job or looking 
+      to advance your career.</p>
+    <p>Our website is designed to be user-friendly and easy to navigate. You can easily 
+      search for information on specific job categories or browse through our latest 
+      reports to stay up-to-date on the latest trends in the labor market.
+      We are committed to providing you with the most accurate and reliable information
+       about the labor market. Whether you are a job seeker or an employer, our platform 
+       can help you make informed decisions and stay ahead of the competition.
+    </p>
+  </div>
+  <div class="links">
+    <h3>Links</h3>
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#profile-card">Profile</a></li>
+  </ul>
+  </div>
+  <div class="contact">
+    <h3>Contact</h3>
+    <div>
+      <span>Job Market, Nairobi, Kenya</span>
+    </div>
+    <div>
+      <img src="" alt="">
+      <span>Phone: 0717207202</span>
+    </div>
+    <div>
+      <img src="" alt="">
+      <span>Email: Renharry99@gmail.com</span>
+    </div>
+  </div>
+  </div>
+  <div class="copyright">
+  &copy; 2023 KenyanJobMarket. All Rights Reserved.
+  </div>
+
+</footer>
+
+
+<!-- <script type="module" src="dataAnalysis.js"></script> -->
+
+
+<script src="profile.js"></script>
+<script src="coursetrend.js"></script>
+
+ <!-- CHARTS -->
+ 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="charts.js"></script>
+
+
+
+<!-- Firebase logout -->
+<script type="module" src="firebaselogout.js"></script> 
+
+</body>
+
+</html>
