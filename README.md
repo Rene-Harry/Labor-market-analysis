@@ -6,12 +6,12 @@ The data was then written to a csv file jobswebdata.csv.The data is then cleaned
 
 ## Features
 
--Scrapes data from a website using Beautifulsoup
--Data Is written to a csv file
--Data cleaning to remove duplicates and null values and other unwanted characters
--Analysis of the data to determine t gain insight of the labor market
--Visualizes analysed data in a website using Chart.js
--Access control using Firebase Authentication
+- Scrapes data from a website using Beautifulsoup
+- Data Is written to a csv file
+- Data cleaning to remove duplicates and null values and other unwanted characters
+- Analysis of the data to determine t gain insight of the labor market
+- Visualizes analysed data in a website using Chart.js
+- Access control using Firebase Authentication
 
 ## Installation
 -Clone the repository
